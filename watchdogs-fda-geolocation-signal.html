@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Watchdogs: FDA Inspection Geolocation Signal</title>
+  <style>
+    body {
+      margin: 24px 36px;
+      background: #fff;
+      color: #000;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 19px;
+      line-height: 1.32;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin: 40px 0 18px;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin: 30px 0 12px;
+    }
+
+    p {
+      max-width: 1050px;
+      margin: 0 0 15px;
+    }
+
+    a {
+      color: #00e;
+      text-decoration: underline;
+    }
+
+    figure {
+      max-width: 930px;
+      margin: 24px 0 30px;
+      padding: 0;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #bbb;
+    }
+
+    figcaption {
+      font-size: 16px;
+      color: #222;
+      margin-top: 8px;
+    }
+
+    sup {
+      font-size: 70%;
+      line-height: 0;
+    }
+
+    ol.references {
+      max-width: 1050px;
+      padding-left: 28px;
+      font-size: 16px;
+      line-height: 1.28;
+    }
+
+    ol.references li {
+      margin-bottom: 9px;
+    }
+
+    .back {
+      font-size: 17px;
+      margin-bottom: 28px;
+    }
+
+    .source-note {
+      font-size: 16px;
+      color: #222;
+      margin-top: 28px;
+    }
+  </style>
+</head>
+<body>
+  <p class="back"><a href="ryan_crowley_portfolio.html">Back to portfolio</a></p>
+
+  <h1>Watchdogs: FDA Inspection Geolocation Signal</h1>
+
+  <p>This project extends the research design in <a href="https://clsbluesky.law.columbia.edu/2024/09/26/watching-the-watchdogs-tracking-sec-inquiries-using-geolocation-data/">Watching the Watchdogs: Tracking SEC Inquiries Using Geolocation Data</a> to the FDA approval and enforcement context.<sup><a href="#fn1">1</a></sup> The SEC paper uses smartphone geolocation data to infer otherwise unobserved physical interactions between regulators and public companies, then studies whether those interactions contain information before formal public disclosure. The FDA version asks the same structural question in a different regulatory system: can physical regulator presence reveal a material legal event before the market observes it?</p>
+
+  <figure>
+    <img src="https://clsbluesky.law.columbia.edu/wp-content/uploads/2024/09/gerken1.png" alt="Figure from the CLS Blue Sky Blog showing Atlanta SEC device visits to firm headquarters">
+    <figcaption>Figure from the CLS Blue Sky Blog post showing the original SEC geolocation concept: SEC-associated device visits to public-company headquarters.</figcaption>
+  </figure>
+
+  <p>The short thesis is based on the lag between FDA inspection activity and public market disclosure. FDA investigators may inspect a pharmaceutical manufacturing site before the public learns about inspection observations, remediation demands, delayed approvals, Warning Letters, or Complete Response Letters.<sup><a href="#fn2">2</a></sup> For a small or mid-cap biotechnology company with a pending approval, manufacturing risk can be binary: a problem at the facility can impair the approval timeline even when the drug clinical data is otherwise sufficient.</p>
+
+  <p>The relevant signal is not simply "more people at a building." The legal event is the arrival of FDA inspection personnel at a facility connected to a pending application or vulnerable manufacturing process. A usable system would need to map drug sponsors to manufacturing sites, identify known FDA offices and inspector travel patterns, isolate unusual facility visits during the relevant regulatory window, and distinguish inspection-related traffic from employees, vendors, contractors, nearby points of interest, and ordinary contract-manufacturer operations.<sup><a href="#fn3">3</a></sup></p>
+
+  <h2>Project Framing</h2>
+
+  <p>The project converts a regulatory trading thesis into a data problem. First, identify the public-company exposure: a drug candidate, PDUFA date, manufacturing site, and facility risk history. Second, identify the latent event: FDA investigator presence at the site before the public disclosure. Third, test whether commercial location datasets can observe a proxy for that event. If the signal is detected before the market receives the formal regulatory outcome, the trade expression would be short exposure to approval-dependent equity where the inspection implies elevated delay or rejection risk.<sup><a href="#fn4">4</a></sup></p>
+
+  <figure>
+    <img src="https://clsbluesky.law.columbia.edu/wp-content/uploads/2024/09/gerken2.png" alt="Figure from the CLS Blue Sky Blog showing abnormal stock returns when insiders sell around an SEC device visit">
+    <figcaption>Figure from the CLS Blue Sky Blog post showing why regulator-visit timing can matter: abnormal returns around insider sales following SEC-associated device visits.</figcaption>
+  </figure>
+
+  <h2>References</h2>
+
+  <ol class="references">
+    <li id="fn1">William Gerken, Steven Irlbeck, Marcus Painter &amp; Guangli Zhang, <em>Watching the Watchdogs: Tracking SEC Inquiries Using Geolocation Data</em> (Oct. 8, 2024) (working paper), available at <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4941708">SSRN</a>; see also the authors' summary on the <a href="https://clsbluesky.law.columbia.edu/2024/09/26/watching-the-watchdogs-tracking-sec-inquiries-using-geolocation-data/">CLS Blue Sky Blog</a>.</li>
+    <li id="fn2">21 U.S.C. § 374; 21 C.F.R. pt. 20; U.S. Food &amp; Drug Admin., <em>Regulatory Procedures Manual</em> ch. 4 (Mar. 2024), <a href="https://www.fda.gov/media/71878/download">FDA PDF</a>.</li>
+    <li id="fn3">See <em>In re X-Mode Social, Inc.</em>, FTC File No. 212-3038 (Jan. 9, 2024); <em>In re InMarket Media, LLC</em>, FTC File No. 202-3088 (Jan. 18, 2024); <em>FTC v. Mobilewalla, Inc.</em>, FTC File No. 202-3196 (Dec. 3, 2024); <em>FTC v. Gravy Analytics, Inc.</em>, FTC File No. 202-3268 (Dec. 3, 2024).</li>
+    <li id="fn4">17 C.F.R. § 229.105; Form 8-K, Item 8.01, 17 C.F.R. § 249.308; <em>TSC Industries, Inc. v. Northway, Inc.</em>, 426 U.S. 438, 449 (1976).</li>
+  </ol>
+
+  <p class="source-note">Contextual figures are linked from the CLS Blue Sky Blog article by William Christopher Gerken, Steven Irlbeck, Marcus Painter, and Guangli Zhang, published September 26, 2024.</p>
+</body>
+</html>
