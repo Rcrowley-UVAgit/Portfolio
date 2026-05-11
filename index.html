@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=“en“>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset=“utf-8“>
+  <meta name=“viewport“ content=“width=device-width, initial-scale=1“>
   <title>Ryan C. Crowley - Portfolio</title>
   <style>
     body {
       margin: 24px 36px;
       background: #fff;
       color: #000;
-      font-family: "Times New Roman", Times, serif;
+      font-family: “Times New Roman“, Times, serif;
       font-size: 16px;
       line-height: 1.3;
     }
@@ -134,41 +134,41 @@
   </style>
 </head>
 <body>
-  <main class="page">
-    <div class="header">
-      <div class="header-text">
+  <main class=“page“>
+    <div class=“header“>
+      <div class=“header-text“>
         <h1>Ryan C. Crowley</h1>
 
-        <p class="subheader">University of Virginia School of Law</p>
-        <p class="subheader">J.D. Candidate, Class of 2026</p>
-        <p class="subheader">(720) 233-1012 | <a href="mailto:pps7jp@virginia.edu">pps7jp@virginia.edu</a></p>
+        <p class=“subheader“>University of Virginia School of Law</p>
+        <p class=“subheader“>J.D. Candidate, Class of 2026</p>
+        <p class=“subheader“>(720) 233-1012 | <a href=“mailto:pps7jp@virginia.edu“>pps7jp@virginia.edu</a></p>
       </div>
-      <img class="header-photo" src="header-photo.jpg" alt="Ryan Crowley">
+      <img class=“header-photo“ src=“header-photo.jpg“ alt=“Ryan Crowley“>
     </div>
 
-    <p class="intro">Selected work at the intersection of law, data, and regulatory systems.</p>
+    <p class=“intro“>Selected work at the intersection of law, data, and regulatory systems.</p>
 
     <h2>Projects</h2>
 
     <ul>
       <li>
-        <h3><a href="Legal%20RAG.pdf">LegalRAG: Trademark Infringement Analysis with Triplet Loss Optimization</a></h3>
+        <h3><a href=“Legal%20RAG.pdf“>LegalRAG: Trademark Infringement Analysis with Triplet Loss Optimization</a></h3>
         <p>This paper proposes a Retrieval-Augmented Generation framework for trademark distinctiveness analysis. The paper starts from a gap in existing trademark technology: image-based retrieval systems can find visually similar marks, but they do not help a firm decide whether a mark is legally protectable. The framework focuses on the Abercrombie spectrum, which classifies marks as generic, descriptive, suggestive, arbitrary, or fanciful based on the relationship between the mark and the goods or services it identifies. The system would retrieve federal court decisions and TTAB opinions from the relevant circuit, then use those authorities to ground a generated analysis. Its embedding model would use a triplet network of SentenceBERT encoders trained on anchor, positive, and negative product-mark pairs so examples from the same Abercrombie category cluster together. The paper also explains the limits of the approach: training data is scarce, distinctiveness analysis is subjective, circuit and judge variation matter, pre-trained models can carry bias, and the specific Abercrombie task may be too simple to justify a costly commercial system.</p>
       </li>
 
       <li>
-        <h3><a href="https://automated-13f-filing.netlify.app/">Automated 13F Filing Prototype</a></h3>
+        <h3><a href=“https://automated-13f-filing.netlify.app/“>Automated 13F Filing Prototype</a></h3>
         <p>This React prototype turns Form 13F preparation into a validation workflow. It separates reportable long positions from positions that do not belong in the filing, including shorts. It checks CUSIPs, issuer names, security classes, fair values, option put-call fields, aggregation rules, and amendment issues. It also records each correction the user applies. The app distinguishes U.S.-listed foreign issuers that appear on the SEC Official 13(f) Securities List from positions that should stay out of the EDGAR submission. After validation, it generates Form 13F-HR/A-oriented XML and information-table data so the user can see how the corrected holdings would flow into a filing.</p>
       </li>
 
       <li>
-        <h3><a href="watchdogs-fda-geolocation-signal.html">Watchdogs: FDA Inspection Geolocation Signal</a></h3>
-        <p>This project adapts the research design from "Watching the Watchdogs" to FDA inspections. The basic question is whether FDA investigator visits can reveal approval or enforcement risk before the market sees a public disclosure. The relevant disclosure could be inspection observations, remediation demands, a delayed approval, a Warning Letter, or a Complete Response Letter. The signal is not simply more people visiting a building. A usable system would need to connect public companies to drug candidates, manufacturing sites, PDUFA dates, and facility risk history. It would also need to distinguish FDA inspection traffic from employees, vendors, contractors, nearby points of interest, and ordinary contract-manufacturer activity.</p>
+        <h3><a href=“watchdogs-fda-geolocation-signal.html“>Watchdogs: FDA Inspection Geolocation Signal</a></h3>
+        <p>This project adapts the research design from “Watching the Watchdogs“ to FDA inspections. The basic question is whether FDA investigator visits can reveal approval or enforcement risk before the market sees a public disclosure. The relevant disclosure could be inspection observations, remediation demands, a delayed approval, a Warning Letter, or a Complete Response Letter. The signal is not simply more people visiting a building. A usable system would need to connect public companies to drug candidates, manufacturing sites, PDUFA dates, and facility risk history. It would also need to distinguish FDA inspection traffic from employees, vendors, contractors, nearby points of interest, and ordinary contract-manufacturer activity.</p>
       </li>
 
       <li>
-        <h3><a href="intl_tax.pdf">Navigating the Evolving Australian Tax Regime for U.S. Cloud Multinationals</a></h3>
-        <p>This client memorandum analyzes the Australian Taxation Office's 2024 audit program for U.S. cloud multinationals. The target structure routes Asia-Pacific revenue through Singapore while using Australian data-center infrastructure. The main risk is permanent establishment treatment under the Australia-Singapore treaty's "substantial equipment" clause. That clause may let the ATO argue that Australian servers are a core part of the cloud business, not merely auxiliary support. The memorandum also evaluates royalty withholding and Diverted Profits Tax theories after PepsiCo. It recommends treaty-routing review, infrastructure restructuring, sovereignty-defense files tied to Australian data-residency rules, contract cleanup around service fees, and transfer-pricing adjustments.</p>
+        <h3><a href=“intl_tax.pdf“>Navigating the Evolving Australian Tax Regime for U.S. Cloud Multinationals</a></h3>
+        <p>This client memorandum analyzes the Australian Taxation Office‘s 2024 audit program for U.S. cloud multinationals. The target structure routes Asia-Pacific revenue through Singapore while using Australian data-center infrastructure. The main risk is permanent establishment treatment under the Australia-Singapore treaty‘s “substantial equipment“ clause. That clause may let the ATO argue that Australian servers are a core part of the cloud business, not merely auxiliary support. The memorandum also evaluates royalty withholding and Diverted Profits Tax theories after PepsiCo. It recommends treaty-routing review, infrastructure restructuring, sovereignty-defense files tied to Australian data-residency rules, contract cleanup around service fees, and transfer-pricing adjustments.</p>
       </li>
     </ul>
   </main>
